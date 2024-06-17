@@ -112,7 +112,7 @@ fun TipCalculator() {
             )
             Spacer(modifier = Modifier.height(20.dp))
             Text(
-                text = "$$totalPerPerson ",
+                text = "$${"%.2f".format(totalPerPerson)}",
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Serif,
@@ -142,7 +142,7 @@ fun TipCalculator() {
             Row {
                 Text(
                     text = "Split",
-                    fontSize = 32.sp,
+                    fontSize = 30.sp,
                     fontFamily = FontFamily.Serif
                 )
                 Spacer(modifier = Modifier.width(64.dp))
@@ -170,7 +170,7 @@ fun TipCalculator() {
             Row{
                 Text(
                     text = "Tip %",
-                    fontSize = 32.sp,
+                    fontSize = 30.sp,
                     fontFamily = FontFamily.Serif,
                     modifier = Modifier.offset(0.dp,10.dp)
                 )
@@ -188,7 +188,7 @@ fun TipCalculator() {
             }
             Spacer(modifier = Modifier.height(32.dp))
             Text(
-                text = "Total tip will be $${totalTip()}",
+                text = "Total tip will be $${"%.2f".format(totalTip())}",
                 fontFamily = FontFamily.Serif
 
             )
