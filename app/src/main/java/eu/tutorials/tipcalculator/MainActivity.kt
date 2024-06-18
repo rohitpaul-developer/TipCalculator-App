@@ -192,6 +192,20 @@ fun TipCalculator() {
                 fontFamily = FontFamily.Serif
 
             )
+            Spacer(modifier = Modifier.height(32.dp))
+            Button(
+                onClick = {
+                    totalPerPerson = 0.0
+                    billTotal = ""
+                    splitPerson = 1
+                    tip = ""
+                },
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+                shape = RoundedCornerShape(12.dp)
+
+            ){
+                Text(text = "Reset")
+            }
         }
     }
 }
