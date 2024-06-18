@@ -124,7 +124,7 @@ fun TipCalculator() {
                 .padding(32.dp)
                 .clip(RoundedCornerShape(14.dp))
                 .fillMaxWidth()
-                .fillMaxHeight(0.8f)
+                .fillMaxHeight(0.9f)
                 .border(2.dp, Color.DarkGray, RoundedCornerShape(14.dp))
                 .padding(32.dp)
         ){
@@ -192,7 +192,7 @@ fun TipCalculator() {
                 fontFamily = FontFamily.Serif
 
             )
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(19.dp))
             Button(
                 onClick = {
                     totalPerPerson = 0.0
